@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archery Game by Kode Gurukul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>🏹 Archery Game</h1>
+            <div class="game-info">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="arrows">Arrows Left: <span id="arrows">10</span></div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="bow-area">
+                <div class="bow-container">
+                    <div class="bow" id="bow">🏹</div>
+                    <div class="stretch-line" id="stretchLine"></div>
+                </div>
+            </div>
+            
+            <div class="target-area">
+                <div class="target" id="target">
+                    <div class="ring ring-1" data-points="10">10</div>
+                    <div class="ring ring-2" data-points="8">8</div>
+                    <div class="ring ring-3" data-points="6">6</div>
+                    <div class="ring ring-4" data-points="4">4</div>
+                    <div class="ring ring-5" data-points="2">2</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p>🎯 Click and drag the arrow backwards to aim and set power. Release to shoot!</p>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn" class="reset-btn" style="display: none;">PLAY AGAIN</button>
+        </div>
+
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
